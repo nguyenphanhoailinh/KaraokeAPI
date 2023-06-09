@@ -35,11 +35,47 @@ namespace testAPI.Controllers
             }   
         }
         [HttpPost]
-        public async Task<ActionResult<KaraokeRoom>> PostTodoItem(KaraokeRoom karaokeroom)
+        public async Task<ActionResult<KaraokeRoom>> PostKaraokeItem(KaraokeRoom karaokeroom)
         {
             _context.karaokeRoom.Add(karaokeroom);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = karaokeroom.Id }, karaokeroom);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdatekaraokeById(int id, KaraokeRoom karaokeroomModels)
+        {
+           var  karaokerooms =_context.karaokeRoom.SingleOrDefault(k => k.Id == id);
+            if(karaokerooms != null)
+            {
+                karaokerooms.TenQuan=karaokeroomModels.TenQuan;
+                karaokerooms.DiaChi = karaokeroomModels.DiaChi;
+                karaokerooms.Img=karaokeroomModels.Img;
+                karaokerooms.SucChua = karaokeroomModels.SucChua;
+                karaokerooms.MoTa=karaokeroomModels.MoTa;
+                _context.SaveChanges();
+                return NoContent();
+            }else
+            {
+                return NotFound();
+            }
+        }
+        [HttpDelete("{id}")]
+        public IActionResult DeleteById(int id)
+        {
+            
+                var karaokerooms = _context.karaokeRoom.SingleOrDefault(k => k.Id == id);
+            if (karaokerooms != null)
+            {
+                _context.Remove(karaokerooms);
+                _context.SaveChanges();
+                return StatusCode(StatusCodes.Status200OK);
+            }
+            else
+            {
+                return NotFound();
+            }
+
         }
     }
 }
