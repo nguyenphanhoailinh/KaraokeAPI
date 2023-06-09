@@ -12,6 +12,8 @@ namespace testAPI.Data
        
         #region DbSet
         public DbSet<KaraokeRoom> karaokeRoom { get; set; }
+        public DbSet<Users> Users { get; set; }
+        public DbSet<Menu> Menu { get; set; }
         #endregion
     }
 }

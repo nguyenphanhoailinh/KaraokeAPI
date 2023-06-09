@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CNNET\\testAPI\\testAPI.csproj": {}
+    "C:\\Users\\thinh\\OneDrive\\Máy tính\\Thi\\testAPI.csproj": {}
   },
   "projects": {
-    "C:\\CNNET\\testAPI\\testAPI.csproj": {
+    "C:\\Users\\thinh\\OneDrive\\Máy tính\\Thi\\testAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CNNET\\testAPI\\testAPI.csproj",
+        "projectUniqueName": "C:\\Users\\thinh\\OneDrive\\Máy tính\\Thi\\testAPI.csproj",
         "projectName": "testAPI",
-        "projectPath": "C:\\CNNET\\testAPI\\testAPI.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "C:\\CNNET\\testAPI\\obj\\",
+        "projectPath": "C:\\Users\\thinh\\OneDrive\\Máy tính\\Thi\\testAPI.csproj",
+        "packagesPath": "C:\\Users\\thinh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thinh\\OneDrive\\Máy tính\\Thi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
